@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us form validation using Javascript</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
         <h2>Contact Us</h2>
         <div id="error_message"></div>
-        <form id="myform">
+        <form id="myform" onsubmit="return validation()">
             <div class="input_field">
                 <input type="text" placeholder="Name" id="name">
             </div>
@@ -27,7 +28,7 @@
                 <textarea id="message" placeholder="Message"></textarea>
             </div>
             <div class="btn">
-                <input type="Submit">
+                <input type="submit">
             </div>
         </form>
     </div>
